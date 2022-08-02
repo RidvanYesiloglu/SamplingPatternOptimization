@@ -10,5 +10,5 @@ To validate our contributions, we present results of our experiments designed in
 
 ![Image 1: The input taking screen](https://github.com/RidvanYesiloglu/SamplingPatternOptimization/blob/main/reached_masks.png?raw=true)
 <p align="center">
-    Image 1: The input taking screen
+    Image 1: The Reached Sampling Patterns (Masks)
 </p>
