@@ -8,8 +8,13 @@ We substantially resolve the issue of the reconstruction network getting biased 
 
 To validate our contributions, we present results of our experiments designed in an ablation study manner and performed for a diverse range of cases including acceleration rates from 2 to 64, single coil and multi-coil data, magnitude image data and complex-valued data as well as synthetic data. It is seen in all the experiments that stabilization leads to improvements on numerical reconstruction quality measured by the PSNR and SSIM metrics as well as nearly perfect attainment of the theoretically known ideal sampling patterns in the synthetic datasets, which is not reached without stabilization. Also, on experiments with magnitude images from MRI data, conjugate symmetry of the k-space, which is not quite seen when stabilization is not applied, is nearly perfectly depicted on the learned undersampling patterns when stabilization is applied. Besides, the experiments demonstrate that significant improvements on numerical reconstruction quality especially on low acceleration rates are achieved when the data consistency procedure is employed. Furthermore, we show via experiments that this cGAN architecture leads to a performance improvement compared to the U-Net architecture, and joint undersampling and reconstruction leads to a performance improvement compared to individual undersampling and reconstruction.
 
-![Image 1: The input taking screen](https://github.com/RidvanYesiloglu/SamplingPatternOptimization/blob/main/reached_masks.png?raw=true)
+![Image 1: The input taking screen](https://github.com/RidvanYesiloglu/SamplingPatternOptimization/blob/main/reached_masks_on_synth.png?raw=true)
 <p align="center">
-    Image 1: The Reached Sampling Patterns (Masks)
+    Image 1: The Reached Sampling Patterns (Masks) on Synthetic Data with an Ideal Mask of Shape "B"
 </p>
 
+
+![Image 1: The input taking screen](https://github.com/RidvanYesiloglu/SamplingPatternOptimization/blob/main/reached_mri_reconstruction.png?raw=true)
+<p align="center">
+    Image 2: Representative Reconstructions Achieved at an Acceleration Rate of 64 on Brain MRI Data
+</p>
